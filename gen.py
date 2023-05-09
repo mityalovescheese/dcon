@@ -30,7 +30,7 @@ class Genetic(Initialization):
 		self.reproduction_combinations = ["parallel", "skip", "in_out"]
 		self.current_reproduction_type = ""
 		self.model = [ ]
-		[self.model.append([self.init.create_root()]) for i in range(100000)] # simulating this type -> vector<pair<bool, vector<string> > >
+		[self.model.append([self.init.create_root()]) for i in range(100000)]
 
 		# child mutations/logic
 	def _mutate_child_node(self, arg):
